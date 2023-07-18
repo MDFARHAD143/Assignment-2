@@ -1,0 +1,7 @@
+/* nav ber responsable styles */
+@media screen and (576px) {
+    .nav{
+        flex-direction: column;
+    }
+    
+}
