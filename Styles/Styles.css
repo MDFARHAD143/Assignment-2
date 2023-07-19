@@ -33,6 +33,7 @@ nav {
     font-weight: 500;
     align-items: center;
     width: 50%;
+    justify-content: center;
 }
 
 .logo h1 {
@@ -43,7 +44,7 @@ nav {
 .follow-icons {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding: 18px 40px;
+    padding: 10px 40px;
     color: #3C354F;
     display: flex;
     align-items: center;
@@ -64,29 +65,39 @@ nav {
     display: flex;
     align-items: center;
     width: 50%;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-.logo  {
+.logo {
     width: 86.041px;
     height: 40px;
-    
+
 }
-img{
+
+img {
     margin-right: 20px;
 }
-.G-letter{
+
+.G-letter {
     color: #FF42A5;
 
 }
-  /* nav ber end */
-  @media screen and (max-width: 574px) {
-    
+
+/* nav ber end */
+@media screen and (max-width: 574px) {
+
 
     .nav {
         flex-direction: column;
         width: 100%;
         
-        
+        margin-bottom: 60px;
 
     }
+    .nav-items{
+        padding: 0px;
+        flex-direction: column;
+    }
+
 }
