@@ -7,12 +7,13 @@
 }
 
                                            /* nav ber Start */
-body {}
+
 
 nav {
 
-    background: lightcoral;
+    
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    
 
 
 }
@@ -58,7 +59,7 @@ nav {
     gap: 16px;
 }
 
-.fa-youtube {
+.first-icon-youtube {
     color: red;
     font-size: 40px;
 }
@@ -226,10 +227,13 @@ ul li {
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-grow: 1;
 
 
 }
-
+.pics > img{
+    flex-grow: 1;
+}
 .pics {
     justify-content: center;
     align-items: center;
@@ -287,14 +291,116 @@ line-height: 30px;
 }
 
 .PlayInstranly-pic{
+    position: relative;
     width: 50%;
 
 }
 .sub-pic{
     position:absolute;
-    top:1680px;
-    left:880px;
+    top:350px;
+    left:-170px;
 }
+                                      /* grid Section Styles */
+  .grids{
+ width: 1440px;
+ margin: 100px auto;
+
+ 
+ 
+ 
+                                        
+  }
+.all-games{
+    display: grid;
+    grid-template-columns: repeat( 5, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:24px;
+                       
+    }                               
+   .game-name{
+   display: flex;
+   align-items: center;
+   gap:15px;
+   background-color:rgba(3, 133, 255, 0.171);
+   border-radius: 20px;
+   padding: 5px;
+   flex-shrink: 1;
+
+   
+  }     
+   .game-name:hover{   
+   background-color:white;
+   color: #FF42A5;
+   border: 2px solid #FF42A5 ;
+   padding: 3px;
+   
+
+   
+  }     
+                            /* footer Section's Styles */
+ footer{
+    background:#0B0223;
+    padding-top:100px;
+ }                           
+.footer-content{
+    width: 1400px;
+    margin: auto;
+    
+    
+}    
+.logo-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    color: white;
+    text-align: center;
+font-family: Work Sans;
+font-size: 30px;
+
+font-weight: 700;
+
+}
+.footer-title{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    color:white;
+    justify-content: center;
+    gap:50px;
+    padding: 65px 200px;
+}
+.footer-icons{
+    color:#FFF;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);    
+    color:white;
+    justify-content: center;
+    gap:10px;
+    padding: 10px 500px;
+    font-size: 40px;
+}
+.footer-description{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-weight: 500;
+    padding: 50px  300px 50px 300px ;
+
+
+        
+}
+.copyright{
+    text-align: center;
+    font-family: Work Sans;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+    padding-bottom: 100px;
+}
+  
                                                      /* Media Queries */
 @media screen and (max-width: 574px) {
     /* nav Media Queries */
@@ -305,15 +411,15 @@ line-height: 30px;
         width: 100%;
         padding: 0px;
         margin: 0px;
-
-
-
+        padding-top: 50px;
     }
 
     .nav-items {
         padding: 0px 0px 30px 0px;
         flex-direction: column;
     }
+    
+                            
 
                                            /* header Media Qeuries */
     .header {
@@ -348,6 +454,10 @@ line-height: 30px;
         flex-direction: column;
         
 
+
+    }
+    .pic-description{
+        font-size: 15px;
 
     }
 
@@ -391,8 +501,8 @@ line-height: 30px;
         padding-left:100px ;
     }
     .sub-pic{
-        top:3580px;
-        left:40px;
+        top:270px;
+        left:-10px;
         width: 200px;
     }
     .PlayInstranly-title{
@@ -407,7 +517,65 @@ line-height: 30px;
     margin-bottom:50px ;
     
     }
+    .grids{
+        width: 90%;
+        
+        justify-items: center;
+        align-items: center;
+        margin: 50px ;
+    }
 
+    .all-games{
+        width: 100% ;
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap:10px;
+        
+        
+                           
+        }
 
+        .footer-content{
+            width: 100%;
+            margin: auto;
+            
+            
+        }    
+        .logo-item{
+           
+        
+        }
+        
+        
+        .footer-title{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);            
+            color:white;
+            justify-content: center;
+            gap:50px;
+            padding: 40px 50px;
+            row-gap: 40px;
+        }
+        .footer-icons{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);            
+            color:white;
+            text-align: center;
+            column-gap: 60px;
+            row-gap: 40px;
+            padding: 40px 120px;
+                
+        }
+        .footer-description{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding: 50px  50px 50px 50px ; 
+            row-gap: 40px;
+            text-align: center;
+        }
+        .copyright{
+            font-size: 14px;
+        }
 
 }
