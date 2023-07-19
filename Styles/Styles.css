@@ -260,7 +260,13 @@ ul li {
     margin: auto;
     display: flex;
     align-items: center;
-}
+    margin-bottom: 100px;}
+    
+    .PlayInstranly-content{
+        width: 50%;
+        padding-right: 250px;
+    
+    }
 .PlayInstranly-title{
     text-align: right;
    font-family: Work Sans;
@@ -279,11 +285,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 30px; 
 }
-.PlayInstranly-content{
-    width: 50%;
-    padding-right: 200px;
 
-}
 .PlayInstranly-pic{
     width: 50%;
 
@@ -355,6 +357,55 @@ line-height: 30px;
     .pics{
         
         text-align: center;
+    }
+    .PlayInstranly{
+
+        flex-direction: column;
+        
+    }
+    
+    .PlayInstranly{
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        margin-bottom: 300px;}
+        
+        .PlayInstranly-content{
+            width: 100%;           
+            padding-right:10px ;            
+            align-content: center;
+            
+            
+        
+        }
+    .PlayInstranly-pic{
+
+        width: 80%;
+        text-align: center;
+        
+    }
+    .main-pic{
+        width: 80%;
+        height: 450px;
+        padding-left:100px ;
+    }
+    .sub-pic{
+        top:3580px;
+        left:40px;
+        width: 200px;
+    }
+    .PlayInstranly-title{
+        text-align: center;
+        padding-bottom: 50px;
+       
+       
+    }
+    .PlayInstranly-description{
+        
+    text-align: center;
+    margin-bottom:50px ;
+    
     }
 
 
