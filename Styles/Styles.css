@@ -170,6 +170,14 @@ ul li {
     margin-top: 40px;
 
 
+}
+:hover.btn-1 {
+    color: #FF42A5;
+    background-color: #FFF;
+    border: 2px solid #FF42A5;
+    padding: 19px 38px;
+   
+
 
 }
 
@@ -182,6 +190,15 @@ ul li {
     background-color: #4EC5F7;
     border-radius: 48px;
     padding: 21px 40px;
+
+}
+:hover.btn-2 {
+    color: #4EC5F7;
+    background-color: #FFF;
+    border: 2px solid #4EC5F7;
+    padding: 19px 38px;
+   
+
 
 }
 
@@ -236,9 +253,7 @@ ul li {
     flex-grow: 1;
     gap:24px;
 }
-.online-container{
-    width: 100%;
-    text-align: center;}
+
 .pics {
     justify-content: center;
     align-items: center;
@@ -509,7 +524,7 @@ font-weight: 700;
 
     }
     .pic-description{
-        font-size: 15px;
+        font-size: 18px;
 
     }
 
@@ -630,6 +645,189 @@ font-weight: 700;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             padding: 50px  50px 50px 50px ; 
+            row-gap: 40px;
+            text-align: center;
+        }
+        .copyright{
+            font-size: 14px;
+        }
+
+}
+                                        /* Media Queries for table */
+                 @media screen and (min-width: 575px) and (max-width: 991px) {
+                            /* nav Media Queries */
+
+
+    .nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 50px;
+    }
+
+    .nav-items {
+        padding: 0px 0px 30px 0px;
+        flex-direction: column;
+    }
+    
+                            
+
+                                           /* header Media Qeuries */
+    .header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .header-pic {
+        width: 70%;
+        align-items: center;
+
+    }
+
+    .online-title {
+        font-size: 30px;
+    }
+
+    .online-description {
+        font-size: 12px;
+    }
+
+    .header-content {
+        width: 80%;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    .online-pics {
+        flex-direction: column;
+        
+
+
+    }
+    .pic-description{
+        font-size: 24px;
+
+    }
+
+    .online-gamer {
+        width: 100%;
+    }
+    .pics{
+        width: 80%;
+        align-items: center;
+        margin: auto;
+        
+        text-align: center;
+    }
+    .online-container{
+        width: 100%;
+        text-align: center;
+    }
+    .PlayInstranly{
+
+        flex-direction: column;
+        
+    }
+    
+    .PlayInstranly{
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        margin-bottom: 300px;}
+        
+        .PlayInstranly-content{
+            width: 100%;           
+            padding-right:10px ;            
+            align-content: center;
+            
+            
+        
+        }
+    .PlayInstranly-pic{
+
+        width: 80%;
+        text-align: center;
+        
+    }
+    .main-pic{
+        width: 80%;
+        height: 450px;
+        padding-left:100px ;
+    }
+    .sub-pic{
+        top:270px;
+        left:-10px;
+        width: 200px;
+    }
+    .PlayInstranly-title{
+        text-align: center;
+        padding-bottom: 50px;
+       
+       
+    }
+    .PlayInstranly-description{
+        
+    text-align: center;
+    margin-bottom:50px ;
+    
+    }
+    .grids{
+        width: 90%;
+        
+        justify-items: center;
+        align-items: center;
+        margin: 50px ;
+    }
+
+    .all-games{
+        width: 100% ;
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap:10px;
+        
+        
+                           
+        }
+
+        .footer-content{
+            width: 100%;
+            margin: auto;
+            
+            
+        }    
+        .logo-item{
+           
+        
+        }
+        
+        
+        .footer-title{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);            
+            color:white;
+            justify-content: center;
+            gap:50px;
+            row-gap: 40px;
+        }
+        .footer-icons{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);            
+            color:white;
+            text-align: center;
+            row-gap: 40px;
+            padding: 40px 260px;
+            margin: auto;
+                
+        }
+        .footer-description{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             row-gap: 40px;
             text-align: center;
         }
